@@ -8,8 +8,8 @@ assignees: ''
 
 A user should be able to:
 
-- [ ] See the logout button when logged in
-- [ ] Click the logout button
-- [ ] Be returned to the home page (`/`)
+- [v] See the logout button when logged in
+- [v] Click the logout button
+- [v] Be returned to the home page (`/`)
 
 For more information on accessing the design assets, see the [Design Assets section in the README](https://github.com/OpenClassrooms-Student-Center/ArgentBank-website#design-assets).
