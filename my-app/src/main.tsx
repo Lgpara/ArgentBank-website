@@ -2,17 +2,21 @@ import React from "react"
 import ReactDOM from "react-dom/client"
 import { Provider } from "react-redux"
 import { store } from "./app/store"
-// import "./index.css"
-import "./main.css"
-import Header from "./components/header/Header"
-import Footer from "./components/footer/Footer"
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+
+import "./main.css"
+
+//Components
+import Header from "./components/header/Header"
+import Footer from "./components/footer/Footer"
 import Index from "./pages/index/Index"
 import SignIn from "./pages/sign-in/Sign-in"
 import User from "./pages/user/User"
+
+
 
 
 const router = createBrowserRouter([
