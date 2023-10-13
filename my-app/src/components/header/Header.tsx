@@ -1,6 +1,6 @@
 import Logo from "../../../appdata/images/argentBankLogo.png"
 import { NavLink, useNavigate } from "react-router-dom"
-import getToken from "./../../scripts/index.js"
+import getToken from "./../../scripts/getToken.js"
 import { useSelector } from "react-redux";
 
 
@@ -9,7 +9,6 @@ function Header() {
   const token = getToken()
   const navigate = useNavigate()
   function signOut(){
-    console.log("signOutcalled")
     localStorage.setItem("token", "")
     navigate("/")
   }
@@ -28,7 +27,7 @@ function Header() {
           <div>
             <NavLink className="main-nav-item" to="/user">
               <i className="fa fa-user-circle"></i>
-              {user.firstName}
+              {user.userName}
             </NavLink>
             <a onClick={signOut} className="main-nav-item">
               <i className="fa fa-sign-out"></i>

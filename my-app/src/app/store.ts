@@ -6,7 +6,6 @@ import userDataReducer from "../pages/user/UserSlice"
 
 export const store = configureStore({
   reducer: {
-    // counter: counterReducer,
     userData: userDataReducer,
   },
   devTools: true,

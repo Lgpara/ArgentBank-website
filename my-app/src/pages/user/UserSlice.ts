@@ -9,10 +9,13 @@ export const userDataSlice = createSlice({
     sendStore: (state, action) => {
       return action.payload
     },
+    changeUserName: (state, action) => {
+      state.userName = action.payload
+    }
   },
 })
 
 
-export const { sendStore } = userDataSlice.actions
+export const { sendStore, changeUserName } = userDataSlice.actions
 
 export default userDataSlice.reducer

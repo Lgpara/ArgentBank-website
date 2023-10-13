@@ -76,6 +76,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 300px;
+  width: 100%;
   position: relative;
 }
 
