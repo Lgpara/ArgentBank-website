@@ -1,17 +1,14 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import getToken from "../../scripts/getToken.js"
 import Axios from "axios"
 import { useDispatch, useSelector } from "react-redux"
 import { sendStore } from "../../pages/user/UserSlice.js"
-import { useLocation } from "react-router"
+
 
 
 export default function StoreHandler(){
-    const location = useLocation()
-    const locationPath = location.pathname
     const dispatch = useDispatch()
     useEffect(() => {
-      //Récupération du token
       const token = getToken()
       async function tokenForId() {
         const headers = {
@@ -40,7 +37,7 @@ export default function StoreHandler(){
       if (token) {
         tokenForId()
       }
-    }, [locationPath])
+    }, [])
     const user = useSelector((state) => state.userData);
     return(
         <></>
