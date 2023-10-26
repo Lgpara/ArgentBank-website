@@ -7,13 +7,11 @@ function NoLogsRedirect(){
     const token = getToken()
     const navigate = useNavigate()
     useEffect(()=>{
-        console.log(token)
         if(token === null){
             navigate("/")
         }else {
             console.log("User token retrieved")
         }
-        console.log("nologs usefxt called")
     },[])
     return(
         <></>

@@ -27,7 +27,6 @@ export default function StoreHandler(){
               userName: data.userName
             }
             dispatch(sendStore(userData))
-            console.log("succes")
           }
         } catch (error) {
           console.error("Une erreur s'est produite lors de la récupération des données.", error);
