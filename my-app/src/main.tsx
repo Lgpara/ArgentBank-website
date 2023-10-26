@@ -12,8 +12,10 @@ import Footer from "./components/footer/Footer"
 import Index from "./pages/index/Index"
 import SignIn from "./pages/sign-in/Sign-in"
 import User from "./pages/user/User"
-import Edit from "./pages/user/edit/edit"
+import Edit from "./pages/user/edit/Edit"
+import NoLogRedirect from "./components/noLogsRedirect/NoLogsRedirect"
 import StoreHandler from "./components/storeHandler/Storehandler"
+
 
 const router = createBrowserRouter([
   {
@@ -42,6 +44,7 @@ const router = createBrowserRouter([
     path: "/user",
     element: (
       <>
+        <NoLogRedirect />
         <StoreHandler />
         <Header />
         <User />
@@ -53,6 +56,7 @@ const router = createBrowserRouter([
     path: "/user/edit",
     element: (
       <>
+        <NoLogRedirect />
         <StoreHandler />
         <Edit />
       </>

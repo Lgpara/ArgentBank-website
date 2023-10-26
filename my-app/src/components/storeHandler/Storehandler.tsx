@@ -2,7 +2,7 @@ import { useEffect } from "react"
 import getToken from "../../scripts/getToken.js"
 import Axios from "axios"
 import { useDispatch, useSelector } from "react-redux"
-import { sendStore } from "../../pages/user/UserSlice.js"
+import { sendStore } from "../../app/storeSlice/userDataSlice.js"
 
 
 

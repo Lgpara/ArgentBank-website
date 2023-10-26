@@ -9,7 +9,7 @@ basePath: /api/v1
 schemes:
   - http
 paths:
-  /store/inventory:
+  /account/transactions:
     post:
       security:
         - Bearer: []

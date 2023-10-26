@@ -4,7 +4,7 @@ import AccountContainer from "../../../components/containers/accountContainer/Ac
 import "./edit.css"
 import Axios from "axios";
 import getToken from "../../../scripts/getToken.js"
-import { changeUserName } from "../UserSlice";
+import { changeUserName } from "../../../app/storeSlice/userDataSlice";
 import { Link } from "react-router-dom";
 
 export default function Edit() {

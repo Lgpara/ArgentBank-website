@@ -1,5 +1,5 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit"
-import userDataReducer from "../pages/user/UserSlice"
+import userDataReducer from "./storeSlice/userDataSlice"
 
 
 // import counterReducer from "../features/counter/counterSlice"
